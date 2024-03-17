@@ -1,0 +1,112 @@
+:root {
+    --base: #191919;
+    --spacing: 8px;
+    --blur: 60px;
+    --height: 500px;
+}
+
+@media (min-width: 900px) {
+    body {
+        text-align: center;
+        width: -webkit-fill-available;
+        margin-top: 40px;
+        background: #193549;
+        color: whitesmoke;
+        font-family: 'helvetica neue', sans-serif;
+        font-weight: 100;
+        font-size: 30px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        gap: 15px;
+    }
+    .image {
+        margin-top: 20px;
+        height: var(--height);
+        padding: var(--spacing);
+        background: var(--base);
+        filter: blur(var(--blur));
+    }
+    .add-img input {
+        margin: 10px;
+        border: none;
+        font-size: 15px;
+    }
+    .add-img button {
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        background-color: rgb(156, 156, 156);
+        color: white;
+    }
+    .add-img {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 900px) {
+    :root {
+        --base: #191919;
+        --spacing: 8px;
+        --blur: 60px;
+        --height: 200px;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        margin-top: 20px;
+        background: #193549;
+        color: whitesmoke;
+        font-family: 'helvetica neue', sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        justify-content: center;
+        text-align: center;
+    }
+    .image {
+        width: auto;
+        margin-top: 20px;
+        height: var(--height);
+        padding: var(--spacing);
+        background: var(--base);
+        filter: blur(var(--blur));
+    }
+    .add-img input {
+        margin: 20px;
+        border: none;
+        font-size: 15px;
+    }
+    .add-img button {
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        background-color: rgb(156, 156, 156);
+        color: white;
+    }
+    .add-img {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        align-items: center;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+.highlight {
+    color: var(--base);
+}
+

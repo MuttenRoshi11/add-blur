@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Blur</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <h1>Play with <span class="highlight">JS</span> variables</h1>
+    <div class="container">
+        <label for="spacing">Spacing</label>
+        <input type="range" name="spacing" min="0" max="150" value="8" data-sizing="px">
+
+        <label for="blur">Blur</label>
+        <input type="range" name="blur" min="0" max="60" value="60" data-sizing="px">
+
+        <label for="height">Height</label>
+        <input type="range" name="height" min="100" max="1000" value="" data-sizing="px">
+
+        <label for="base">Color</label>
+        <input type="color" name="base" value="yellow">
+    </div>
+    
+    <img class="image" src="https://th.bing.com/th/id/R.7f6c47ffd766a55d1531793250ad43c9?rik=WtP53LjM9zTzZA&riu=http%3a%2f%2fimg12.deviantart.net%2f2f45%2fi%2f2009%2f028%2f1%2f0%2ffunny_dog_2_by_cathita.jpg&ehk=TPgAI7Zr5plAL3sT5DxXplziWjEC%2bAYfBerbrx8dzN4%3d&risl=&pid=ImgRaw&r=0" alt="hidden">
+
+    <div class="add-img">
+        <label for="image">Add Image</label> <br>
+        <input type="file" id="imgInput" name="image" accept="image/*"><br>
+        <button onclick="addImg()">Submit</button>
+    </div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
